@@ -3,11 +3,11 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Main {
+public class AgensDemo {
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/my_graph_db"; // Change to your database URL
-        String user = "jain.r"; // Change to your database username
-        String password = "password"; // Change to your database password
+        String user = ""; // Change to your database username
+        String password = ""; // Change to your database password
 
         try (Connection con = DriverManager.getConnection(url, user, password);
              Statement st = con.createStatement()) {
