@@ -1,7 +1,7 @@
 ### Return list of products viewed and purchased by individualId :12
 MATCH (a:individual {id: '12'})-[:transactions]->(o:orders)-[:purchased]->(purchasedProduct:product)
 WHERE EXISTS ((a)-[:viewed]->(purchasedProduct))
-RETURN DISTINCT purchasedProduct.name AS productName`  
+RETURN DISTINCT purchasedProduct.name AS productName
 
 ```
  productname
